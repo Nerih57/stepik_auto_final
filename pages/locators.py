@@ -8,3 +8,12 @@ class LoginPageLocators ():
     LOGIN_FORM = (By.CSS_SELECTOR, "#login_form")
     REGISTER_FORM = (By.CSS_SELECTOR, "#register_form")
     
+class ProductPageLocators():
+    Add_to_basket = (By.CSS_SELECTOR, ".btn.btn-lg.btn-primary.btn-add-to-basket")
+    
+class FoundPriceAndNameLocators():
+    Price = (By.CSS_SELECTOR, ".col-sm-6.product_main>p.price_color")
+    Price_after_payment = (By.CSS_SELECTOR, ".alert.alert-safe.alert-noicon.alert-info.fade.in>div.alertinner>p>strong")
+    Name = (By.CSS_SELECTOR, ".col-sm-6.product_main>h1")
+    Name_after_payment = (By.CSS_SELECTOR, "#messages > .alert.alert-safe.alert-noicon.alert-success.fade.in:nth-child(1)>div.alertinner>strong")
+    
