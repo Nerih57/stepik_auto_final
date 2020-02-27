@@ -1,13 +1,10 @@
 from .base_page import BasePage
+from .product_page import PageObject
 from .locators import BasketLocators
 from .locators import ProductPageLocators
 
 
-class BasketPage(BasePage):
-    def add_to_basket(self):
-        link = self.browser.find_element(*ProductPageLocators.Add_to_basket)
-        link.click()
-
+class BasketPage(PageObject):
     def should_not_be_products_in_basket(self):
         assert self.is_not_element_present(*BasketLocators.BasketFull), \
         "Products are in the basket, but should not be"
