@@ -4,7 +4,6 @@ from .base_page import BasePage
 
 class PageObject(BasePage):
     def should_be_product_page(self):
-        #self.should_be_promo_url()
         self.add_to_basket()
         self.check_price()
         self.check_name()
